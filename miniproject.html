@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project - Form Workshop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script-miniproject.js" defer></script>
+</head>
+<body>
+    <section>
+        <h2>Mini Project: Form Pendaftaran Workshop</h2>
+        <form id="formWorkshop" novalidate>
+            <div>
+                <label for="namaWs">Nama Lengkap (Min. 3 karakter):</label>
+                <input id="namaWs" type="text">
+                <small>Karakter tersisa: <span id="sisaKarakterWs">50</span></small>
+            </div>
+            
+            <div>
+                <label for="emailWs">Email:</label>
+                <input id="emailWs" type="email">
+            </div>
+            
+            <div>
+                <label for="sesiWs">Pilih Sesi Workshop:</label>
+                <select id="sesiWs">
+                    <option value="">-- Pilih Sesi --</option>
+                    <option value="Web Development Basics">Web Development Basics</option>
+                    <option value="UI/UX Interactive Design">UI/UX Interactive Design</option>
+                    <option value="Advanced JavaScript & DOM">Advanced JavaScript & DOM</option>
+                </select>
+                <p id="infoSesi" style="font-style: italic; color: #555;"></p>
+            </div>
+            
+            <button type="submit">Daftar Workshop</button>
+            <button type="reset" id="resetWs" style="background-color: #6c757d; margin-left: 8px;">Reset Input</button>
+        </form>
+        <p id="pesanWs" aria-live="polite"></p>
+    </section>
+</body>
+</html>
