@@ -25,6 +25,7 @@ lab6_dom_event/
 ├── script-eksperimen.js    # Logic JavaScript Eksperimen Mandiri
 ├── screenshots             # Folder Bukti Tangkap Layar
 └── README.md               # Dokumentasi Laporan Praktikum
+```
 
 ---
 
