@@ -92,7 +92,7 @@ lab6_dom_event/
 
   **Bukti screenshots:**
 
-  <img width="599" height="320" alt="Screenshot 2026-10-31 165518" src="https://github.com/user-                          attachments/assets/34c2aa2c-d670-42e0-90de-7ab67003e0fe" />
+  <img width="599" height="320" alt="Screenshot 2026-10-31 165518" src="https://github.com/user-attachments/assets/34c2aa2c-d670-42e0-90de-7ab67003e0fe" />
 
 ---
 
@@ -106,12 +106,82 @@ lab6_dom_event/
 
   **Bukti screenshots**
 
-  <img width="616" height="386" alt="Screenshot 2026-10-31 165831" src="https://github.com/user-                           attachments/assets/d1151418-ed42-414f-bc45-cae99058381d" />
-  <img width="599" height="221" alt="Screenshot 2026-10-31 165858" src="https://github.com/user-                          attachments/assets/6d5bcdbe-bb33-48f1-8428-b24cc2f02a4f" />
-  <img width="595" height="143" alt="Screenshot 2026-10-31 165913" src="https://github.com/user-                          attachments/assets/7751d7b8-df28-4fd5-805c-8e62fc12cb36" />
-  <img width="591" height="110" alt="Screenshot 2026-10-31 165922" src="https://github.com/user-                          attachments/assets/600abe7e-2bdf-42d5-a936-2c2a51ef3439" />
-  <img width="959" height="446" alt="Screenshot 2026-10-31 170826" src="https://github.com/user-                          attachments/assets/2f0e1059-4b26-4006-8315-d69b1e847926" />
+  <img width="616" height="386" alt="Screenshot 2026-10-31 165831" src="https://github.com/user-attachments/assets/d1151418-ed42-414f-bc45-cae99058381d" />
+  <img width="599" height="221" alt="Screenshot 2026-10-31 165858" src="https://github.com/user-attachments/assets/6d5bcdbe-bb33-48f1-8428-b24cc2f02a4f" />
+  <img width="595" height="143" alt="Screenshot 2026-10-31 165913" src="https://github.com/user-attachments/assets/7751d7b8-df28-4fd5-805c-8e62fc12cb36" />
+  <img width="591" height="110" alt="Screenshot 2026-10-31 165922" src="https://github.com/user-attachments/assets/600abe7e-2bdf-42d5-a936-2c2a51ef3439" />
+  <img width="959" height="446" alt="Screenshot 2026-10-31 170826" src="https://github.com/user-attachments/assets/2f0e1059-4b26-4006-8315-d69b1e847926" />
   
+---
+
+# Pertanyaan Evaluasi
+
+### 1. Apa yang dimaksud dengan DOM dan apa manfaatnya?
+
+* **Pengertian:** **DOM (Document Object Model)** adalah antarmuka pemrograman yang merepresentasikan dokumen HTML atau XML ke dalam bentuk struktur hierarki pohon (*tree structure*). Setiap elemen, atribut, dan teks dalam dokumen dianggap sebagai objek atau *node* yang dapat diakses dan dimanipulasi oleh bahasa pemrograman (seperti JavaScript).
+* **Manfaat:**
+* Memungkinkan JavaScript untuk membaca, menambah, mengubah, atau menghapus elemen HTML dan CSS secara dinamis.
+* Membuat halaman web menjadi interaktif dan responsif terhadap tindakan pengguna tanpa perlu memuat ulang (*reload*) halaman.
 
 
+
+---
+
+### 2. Apa perbedaan `getElementById()`, `querySelector()`, dan `querySelectorAll()`?
+
+* **`getElementById(id)`**: Digunakan untuk mencari **satu elemen tunggal** berdasarkan atribut `id`-nya. Mengembalikan objek elemen pertama yang cocok (atau `null` jika tidak ada). Sangat spesifik hanya untuk `id`.
+* **`querySelector(selector)`**: Digunakan untuk mencari **satu elemen tunggal** menggunakan pemilih CSS (*CSS selector* seperti `#id`, `.class`, atau `tag`). Mengembalikan elemen pertama yang cocok dengan pemilih tersebut.
+* **`querySelectorAll(selector)`**: Digunakan untuk mencari **seluruh elemen** yang cocok dengan pemilih CSS yang diberikan. Mengembalikan kumpulan data berupa `NodeList` yang dapat di-*loop* (misalnya menggunakan `forEach`).
+
+---
+
+### 3. Apa fungsi `addEventListener()` dan sebutkan tiga contoh event?
+
+* **Fungsi:** Untuk mendaftarkan (menempelkan) sebuah fungsi *listener* (atau *callback*) ke elemen tertentu guna mendengarkan terjadinya interaksi atau kejadian tertentu (*event*) pada elemen tersebut.
+* **Tiga Contoh Event:**
+1. `click`: Terjadi saat elemen diklik oleh pengguna.
+2. `submit`: Terjadi saat sebuah formulir dikirimkan.
+3. `input` atau `change`: Terjadi saat nilai atau teks di dalam elemen *input* mengalami perubahan.
+
+---
+
+### 4. Mengapa `event.preventDefault()` digunakan pada event submit form?
+
+Secara *default*, ketika sebuah form disubmit (`submit`), browser akan melakukan aksi bawaan berupa **pengiriman data ke server dan memuat ulang (*reload*) halaman**.
+
+`event.preventDefault()` digunakan untuk menghentikan perilaku bawaan tersebut. Hal ini sangat penting jika kita ingin memproses data form secara asinkron menggunakan JavaScript (misalnya menggunakan `Fetch API` atau validasi kustom) tanpa membuat halaman web berkedip atau mereload ulang.
+
+---
+
+### 5. Apa perbedaan `textContent` dan `innerHTML` dari sisi penggunaan dan keamanan?
+
+* **Penggunaan:**
+* **`textContent`**: Digunakan untuk mengambil atau mengubah **teks murni** di dalam sebuah elemen. Tag HTML apa pun yang disertakan di dalamnya akan diperlakukan sebagai teks biasa, bukan sebagai elemen HTML.
+* **`innerHTML`**: Digunakan untuk mengambil atau mengubah **konten HTML** di dalam elemen, termasuk tag-tag HTML di dalamnya (seperti menyisipkan elemen `<b>`, `<span>`, dll.).
+
+
+* **Keamanan:**
+* **`textContent` Lebih Aman**: Karena string diperlakukan sebagai teks murni, metode ini kebal terhadap kerentanan **XSS (*Cross-Site Scripting*)**.
+* **`innerHTML` Kurang Aman (Berisiko)**: Jika digunakan untuk menampilkan inputan yang berasal langsung dari pengguna tanpa disanitasi, penyerang dapat menyisipkan kode berbahaya (misalnya tag `<script>`), yang kemudian akan dieksekusi oleh browser.
+
+---
+
+### 6. Bagaimana `classList.toggle()` membantu mengubah tampilan elemen?
+
+Metode `classList.toggle('nama-class')` memeriksa apakah suatu elemen sudah memiliki kelas CSS tertentu:
+
+* Jika kelas tersebut **belum ada**, maka kelas akan **ditambahkan**.
+* Jika kelas tersebut **sudah ada**, maka kelas akan **dihapus**.
+
+Hal ini sangat membantu dan mengefisienkan penulisan kode saat membuat efek sakelar (*toggle*), seperti tombol *Dark Mode / Light Mode*, membuka/menutup menu *dropdown*, atau animasi visibilitas elemen tanpa perlu menulis logika `if-else` yang panjang.
+
+---
+
+### 7. Sebutkan minimal tiga skenario pengujian validasi form.
+
+1. **Skenario Form Kosong (*Empty Fields*):** Menguji ketika form disubmit tanpa mengisi kolom yang wajib diisi (*required*), untuk memastikan pesan kesalahan (*error message*) muncul.
+2. **Skenario Format Data Salah (Contoh: Email):** Menguji input email dengan format yang tidak valid (misalnya tidak mencantumkan tanda `@` atau nama domain), untuk memastikan sistem mendeteksi kesalahan format.
+3. **Skenario Panjang Karakter Minimum (Contoh: Password):** Menguji input *password* dengan jumlah karakter kurang dari batas minimal yang ditentukan (misalnya kurang dari 8 karakter), untuk memastikan validasi menolak input tersebut.
+
+---
 
