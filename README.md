@@ -14,6 +14,7 @@ Repository ini berisi hasil pengerjaan Praktikum 6 Pemrograman Web mengenai mani
 
 # Struktur File
 
+```text
 lab6_dom_event/
 ├── index.html              # Halaman Utama (Latihan 1 - 6)
 ├── script.js               # Logic JavaScript untuk Latihan 1 - 6
@@ -32,6 +33,7 @@ lab6_dom_event/
 **1. Latihan Dasar (Latihan 1 - 6)**
 - Latihan 1 (Mengubah teks dengan DOM): Mengubah isi teks heading dan paragraf secara dinamis.
   Bukti Screenshots:
+
   <img width="597" height="125" alt="Screenshot 2026-10-31 161809" src="https://github.com/user-attachments/assets/4f7de032-bd8b-4a79-9caa-3c503bb557f1" />
   <img width="599" height="125" alt="Screenshot 2026-10-31 162334" src="https://github.com/user-attachments/assets/d998decb-e2fd-4bcd-86a4-01a50015c3aa" />
   <img width="597" height="157" alt="Screenshot 2026-10-31 163957" src="https://github.com/user-attachments/assets/6116e93e-39db-4264-a23c-2d71dbab3562" />
