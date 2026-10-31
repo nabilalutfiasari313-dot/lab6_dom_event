@@ -43,22 +43,26 @@ lab6_dom_event/
 - Latihan 2 (Event Click): Menampilkan timestamp saat tombol diklik.
 
   **Bukti screenshots:**
+  
   <img width="599" height="143" alt="Screenshot 2026-10-31 164031" src="https://github.com/user-attachments/assets/48f30cc0-a033-43e4-bb43-806a0681f79f" />
 
 - Latihan 3 (Mengubah kelas dan gaya CSS): Mengubah dan mengaktifkan class CSS (highlight & teks-besar) secara interaktif.
 
   **Bukti screenshots:**
+  
   <img width="596" height="142" alt="Screenshot 2026-10-31 164100" src="https://github.com/user-attachments/assets/b17c3c9b-a834-46f7-943c-fb657eaf8b32" />
   <img width="599" height="174" alt="Screenshot 2026-10-31 164121" src="https://github.com/user-attachments/assets/451a46b6-71a9-4887-8f0e-61e84280cf3b" />
 
 - Latihan 4 (Event input dan penghitung karakter): Menghitung jumlah karakter input secara real-time.
 
   **Bukti screenshots:**
+  
   <img width="597" height="181" alt="Screenshot 2026-10-31 164152" src="https://github.com/user-attachments/assets/1892006a-3efe-46ee-83b1-3b7ed80c13d4" />
 
 - Latihan 5 (Validasi form pendaftaran): Validasi dasar input nama, format email, dan batas usia (17-100).
 
   **Bukti screenshots:**
+  
   <img width="601" height="298" alt="Screenshot 2026-10-31 164204" src="https://github.com/user-attachments/assets/e09e3401-9208-4f75-af4b-9b417b4a6602" />
   <img width="599" height="326" alt="Screenshot 2026-10-31 164258" src="https://github.com/user-attachments/assets/f7f837d7-46a7-4d34-b319-eed634ee6ae3" />
   <img width="595" height="323" alt="Screenshot 2026-10-31 173802" src="https://github.com/user-attachments/assets/2a7ae0a1-078c-4127-ac7b-ed729dd72899" />
@@ -68,7 +72,8 @@ lab6_dom_event/
 - Latihan 6 (Daftar tugas sederhana (To-do List)): Menambahkan tugas baru dan fitur toggle penanda selesai.
 
   **Bukti screenshots**
-   <img width="601" height="180" alt="Screenshot 2026-10-31 164343" src="https://github.com/user-attachments/assets/db69471f-9402-49cd-9867-7cdfc9ada34e" />
+  
+  <img width="601" height="180" alt="Screenshot 2026-10-31 164343" src="https://github.com/user-attachments/assets/db69471f-9402-49cd-9867-7cdfc9ada34e" />
   <img width="597" height="248" alt="Screenshot 2026-10-31 164356" src="https://github.com/user-attachments/assets/f6fd8914-707e-400f-98c2-58f8b295f8a8" />
   <img width="601" height="250" alt="Screenshot 2026-10-31 164407" src="https://github.com/user-attachments/assets/d91f0a11-b030-4002-b075-5c847db6091b" />
 
