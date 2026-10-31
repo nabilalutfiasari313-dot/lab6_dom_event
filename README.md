@@ -77,3 +77,41 @@ lab6_dom_event/
   <img width="597" height="248" alt="Screenshot 2026-10-31 164356" src="https://github.com/user-attachments/assets/f6fd8914-707e-400f-98c2-58f8b295f8a8" />
   <img width="601" height="250" alt="Screenshot 2026-10-31 164407" src="https://github.com/user-attachments/assets/d91f0a11-b030-4002-b075-5c847db6091b" />
 
+---
+
+# Mini Project — Form Pendaftaran Workshop
+
+  Kembangkan halaman pendaftaran workshop dengan minimal tiga fungsi interaktif.
+  • Validasi nama, email, dan pilihan sesi.
+  • Penghitung karakter atau ringkasan input secara langsung.
+  • Pesan kesalahan dan pesan sukses yang tampil pada halaman.
+  • Tombol reset atau hapus input.
+  • Gunakan addEventListener() untuk event input, change, click, atau submit.
+  Pisahkan kode ke index.html, style.css, dan script.js. Buat antarmuka yang mudah digunakan di desktop
+  maupun perangkat mobile.
+
+  **Bukti screenshots:**
+
+  <img width="599" height="320" alt="Screenshot 2026-10-31 165518" src="https://github.com/user-                          attachments/assets/34c2aa2c-d670-42e0-90de-7ab67003e0fe" />
+
+---
+
+# Eksperimen Mandiri
+  1. Tambahkan tombol untuk menghapus satu item dari To-do List.
+  2. Ubah validasi agar nama minimal terdiri dari tiga karakter.
+  3. Tambahkan event change pada dropdown sesi workshop dan tampilkan sesi yang dipilih.
+  4. Buat tombol untuk menyembunyikan dan menampilkan paragraf menggunakan class CSS.
+  5. Coba pindahkan script tanpa defer ke bagian head. Amati kemungkinan masalah dan jelaskan
+  penyebabnya.
+
+  **Bukti screenshots**
+
+  <img width="616" height="386" alt="Screenshot 2026-10-31 165831" src="https://github.com/user-                           attachments/assets/d1151418-ed42-414f-bc45-cae99058381d" />
+  <img width="599" height="221" alt="Screenshot 2026-10-31 165858" src="https://github.com/user-                          attachments/assets/6d5bcdbe-bb33-48f1-8428-b24cc2f02a4f" />
+  <img width="595" height="143" alt="Screenshot 2026-10-31 165913" src="https://github.com/user-                          attachments/assets/7751d7b8-df28-4fd5-805c-8e62fc12cb36" />
+  <img width="591" height="110" alt="Screenshot 2026-10-31 165922" src="https://github.com/user-                          attachments/assets/600abe7e-2bdf-42d5-a936-2c2a51ef3439" />
+  <img width="959" height="446" alt="Screenshot 2026-10-31 170826" src="https://github.com/user-                          attachments/assets/2f0e1059-4b26-4006-8315-d69b1e847926" />
+  
+
+
+
